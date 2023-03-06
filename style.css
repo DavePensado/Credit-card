@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.card-container {
+  height: 100vh;
+  color: white;
+
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  height: 250px;
+  background-image: linear-gradient(to right, #8ac4f2, #268ccc);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 50px 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.562);
+}
+
+.card:after {
+  content: "";
+  width: 225px;
+  height: 225px;
+  position: absolute;
+  background-color: white;
+  opacity: .4;
+  top: -20%;
+  right: -18%;
+  border-radius: 50%;
+}
+
+.card:before {
+  content: "";
+  width: 225px;
+  height: 225px;
+  position: absolute;
+  background-color: white;
+  opacity: .4;
+  top: 45%;
+  right: -7%;
+  border-radius: 50%;
+}
+
+.bookmark {
+  position: absolute;
+  top: 19%;
+  right: 25px;
+}
+
+.card-heading {
+  font-weight: 400;
+}
+
+.num-of-orders {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: -20px;
+}
